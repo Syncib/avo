@@ -1,0 +1,88 @@
+/* Initial navbar styles */
+.navbar {
+  padding-top: 2rem;
+  transition: background-color 0.5s, padding-top 0.5s;
+  background-color: transparent;
+}
+
+.navbar.scrolled {
+  background-color: white !important;
+  padding-top: 1rem;
+  transition: background-color 0.5s, padding-top 0.5s;
+}
+
+.navbar.scrolled .avo span:nth-child(odd) {
+  color: black !important;
+}
+
+/* Adjust nav items when scrolled */
+.navbar.scrolled .nav-link {
+  color: black !important;
+}
+
+/* Styles for the nav menu */
+.nav-menu {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: red !important;
+}
+
+.nav-link.active {
+  color: red !important;
+}
+
+.custom-position {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.trans {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.avo {
+  font-size: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .navbar {
+    padding-top: 0.5rem;
+    transition: background-color 0.5s, padding-top 0.5s;
+    background-color: black;
+  }
+
+  .navbar.scrolled {
+    background-color: black !important; /* Change background color when scrolled */
+    padding-top: 0.5rem; /* Keep consistent padding */
+  }
+
+  .custom-position {
+    position: fixed;
+  }
+
+  .trans {
+    color: white;
+  }
+
+  /* Adjust link color for the scrolled state */
+  .navbar.scrolled .nav-link {
+    color: white !important; /* Change link color for scrolled state */
+  }
+  .navbar.scrolled .avo span:nth-child(odd) {
+    color: white !important;
+  }
+}
