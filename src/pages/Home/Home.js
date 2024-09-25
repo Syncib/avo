@@ -8,6 +8,7 @@ import about from "../../assets/images/about.webp";
 import "./Home.css";
 import Navbar from "../../components/Navbar";
 import MyCarousel from "../../components/MyCarousel";
+import WorkTemplate from "../../components/WorkTemplate";
 const aboutThings = [
   { src: vector, name: "UI/UX Design" },
   { src: webdev, name: "Web Development" },
@@ -97,8 +98,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="work-section">
+      <div className="work-section container">
       <h1 className="nunito-sans-900 text-center mb-5">OUR WORKS</h1>
+      <div className="d-flex">
+      <WorkTemplate/>
+      <WorkTemplate/>
+      </div>
       </div>
     </div>
   );
