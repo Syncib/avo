@@ -1,0 +1,17 @@
+.work-subheading{
+    display: block;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.work-heading{
+    font-size :40px;
+    line-height: 1.3;
+    letter-spacing: 2px;
+}
+
+.work-website{
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #a0a0b4;
+}

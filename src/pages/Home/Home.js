@@ -9,6 +9,7 @@ import "./Home.css";
 import Navbar from "../../components/Navbar";
 import MyCarousel from "../../components/MyCarousel";
 import WorkTemplate from "../../components/WorkTemplate";
+import WorkSection from "../../sections/WorkSection";
 const aboutThings = [
   { src: vector, name: "UI/UX Design" },
   { src: webdev, name: "Web Development" },
@@ -75,7 +76,9 @@ const Home = () => {
               <h2 className="about-thing-subheading nunito-sans-600">
                 Search Engine Optimization
               </h2>
-              <p className="nunito-sans-regular about-para">Far far away, behind the word mountains</p>
+              <p className="nunito-sans-regular about-para">
+                Far far away, behind the word mountains
+              </p>
             </div>
           </div>
           <div className="col-12 col-lg-3 d-flex justify-content-lg-center gap-3">
@@ -84,7 +87,9 @@ const Home = () => {
               <h2 className="about-thing-subheading nunito-sans-600">
                 Search Engine Optimization
               </h2>
-              <p className="nunito-sans-regular about-para">Far far away, behind the word mountains</p>
+              <p className="nunito-sans-regular about-para">
+                Far far away, behind the word mountains
+              </p>
             </div>
           </div>
           <div className="col-12 col-lg-3 d-flex justify-content-lg-center gap-3">
@@ -93,18 +98,14 @@ const Home = () => {
               <h2 className="about-thing-subheading nunito-sans-600">
                 Search Engine Optimization
               </h2>
-              <p className="nunito-sans-regular about-para">Far far away, behind the word mountains</p>
+              <p className="nunito-sans-regular about-para">
+                Far far away, behind the word mountains
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="work-section container">
-      <h1 className="nunito-sans-900 text-center mb-5">OUR WORKS</h1>
-      <div className="d-flex">
-      <WorkTemplate/>
-      <WorkTemplate/>
-      </div>
-      </div>
+      <WorkSection/>
     </div>
   );
 };
