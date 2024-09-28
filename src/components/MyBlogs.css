@@ -1,0 +1,27 @@
+.blog-entry{
+    font-size: 20px;
+    width: 220px;
+  }
+  
+  .blog-entry-meta{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .blog-image{
+    height: 270px;
+    width: 220px;
+    background-size: cover;
+    background-position: center;
+  }
+
+.blog-para{
+    width: 220px;
+}
+
+@media (max-width: 992px) {
+    .blog-image,.blog-entry,.blog-para{
+        width: unset;
+    }
+   
+  }
