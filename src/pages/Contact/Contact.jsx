@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import Footer from "../../components/Footer";
 import "./Contact.css";
+import SlideFadeIn from "../../components/SlideFadeIn";
 const Contact = () => {
   return (
     <div className="overflow-hidden">
@@ -22,7 +23,9 @@ const Contact = () => {
             <Link to={"/contact"}>CONTACT</Link>
             <FaChevronRight color="red" />
           </div>
-          <h1 className="white contact-herohead">CONTACT</h1>
+          <SlideFadeIn>
+              <h1 className="white contact-herohead">CONTACT</h1>
+          </SlideFadeIn>
         </div>
       </div>
       <div className="d-flex">
@@ -31,12 +34,18 @@ const Contact = () => {
       </div>
       <div className="contact-section container">
         <div className="text-center mb-5">
-          <h2 className="contact-head">CONTACT US</h2>
-          <h1 className="nunito-sans-900">HAVE A PROJECT?</h1>
-          <p className="about-para">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia
-          </p>
+          <SlideFadeIn>
+              <h2 className="contact-head">CONTACT US</h2>
+          </SlideFadeIn>
+          <SlideFadeIn>
+              <h1 className="nunito-sans-900">HAVE A PROJECT?</h1>
+          </SlideFadeIn>
+          <SlideFadeIn>
+              <p className="about-para">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia
+              </p>
+          </SlideFadeIn>
         </div>
         <div className="row justify-content-center gap-4 mx-2">
           <div className="col-12 col-lg-5">
@@ -77,46 +86,54 @@ const Contact = () => {
             </form>
           </div>
           <div className="col-12 col-lg-2 d-flex flex-column text-nowrap conti gap-5">
-            <div className="row">
-              <div className="col-8 bg-danger rounded-circle conico-bg text-center">
-                <FaMapMarkerAlt color="white" />
-              </div>
-              <div className="col-4">
-                <p>Address:</p>
-                <p className="about-para">
-                  198 West 21th Street, Suite 721
-                  <br />
-                  New York NY 10016
-                </p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-8 bg-danger rounded-circle conico-bg text-center">
-                <FaPhoneAlt color="white" />
-              </div>
-              <div className="col-4">
-                <p>Phone:</p>
-                <p>+ 1235 2355 98</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-8 bg-danger rounded-circle conico-bg text-center">
-                <FaPaperPlane color="white" />
-              </div>
-              <div className="col-4">
-                <p>Email:</p>
-                <p>info@yoursite.com</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-8 bg-danger rounded-circle conico-bg text-center">
-                <FaGlobeAmericas color="white" />
-              </div>
-              <div className="col-4">
-                <p>Website:</p>
-                <p>yoursite.com</p>
-              </div>
-            </div>
+            <SlideFadeIn>
+                <div className="row">
+                  <div className="col-8 bg-danger rounded-circle conico-bg text-center">
+                    <FaMapMarkerAlt color="white" />
+                  </div>
+                  <div className="col-4">
+                    <p>Address:</p>
+                    <p className="about-para">
+                      198 West 21th Street, Suite 721
+                      <br />
+                      New York NY 10016
+                    </p>
+                  </div>
+                </div>
+            </SlideFadeIn>
+            <SlideFadeIn>
+                <div className="row">
+                  <div className="col-8 bg-danger rounded-circle conico-bg text-center">
+                    <FaPhoneAlt color="white" />
+                  </div>
+                  <div className="col-4">
+                    <p>Phone:</p>
+                    <p>+ 1235 2355 98</p>
+                  </div>
+                </div>
+            </SlideFadeIn>
+            <SlideFadeIn>
+                <div className="row">
+                  <div className="col-8 bg-danger rounded-circle conico-bg text-center">
+                    <FaPaperPlane color="white" />
+                  </div>
+                  <div className="col-4">
+                    <p>Email:</p>
+                    <p>info@yoursite.com</p>
+                  </div>
+                </div>
+            </SlideFadeIn>
+            <SlideFadeIn>
+                <div className="row">
+                  <div className="col-8 bg-danger rounded-circle conico-bg text-center">
+                    <FaGlobeAmericas color="white" />
+                  </div>
+                  <div className="col-4">
+                    <p>Website:</p>
+                    <p>yoursite.com</p>
+                  </div>
+                </div>
+            </SlideFadeIn>
           </div>
         </div>
       </div>

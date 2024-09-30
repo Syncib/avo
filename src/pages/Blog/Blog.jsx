@@ -13,6 +13,7 @@ import image6 from "../../assets/images/image_6.webp";
 import image7 from "../../assets/images/image_7.webp";
 import image8 from "../../assets/images/image_8.webp";
 import "./Blog.css";
+import SlideFadeIn from "../../components/SlideFadeIn";
 
 const Blog = () => {
   const blogImages = [
@@ -36,7 +37,9 @@ const Blog = () => {
             <Link to={"/blog"}>BLOG</Link>
             <FaChevronRight color="red" />
           </div>
-          <h1 className="white blog-herohead">BLOG</h1>
+          <SlideFadeIn>
+            <h1 className="white blog-herohead">BLOG</h1>
+          </SlideFadeIn>
         </div>
       </div>
       <div className="d-flex">

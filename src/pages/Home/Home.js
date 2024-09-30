@@ -12,6 +12,7 @@ import image2 from "../../assets/images/image_2.webp";
 import image3 from "../../assets/images/image_3.webp";
 import image4 from "../../assets/images/image_4.webp";
 import "./Home.css";
+import SlideFadeIn from "../../components/SlideFadeIn";
 
 const Home = () => {
   const blogImages = [image1, image2, image3, image4];
@@ -45,7 +46,9 @@ const Home = () => {
       </div>
       <div className="blog-section">
         <div className="container">
-          <h1 className="nunito-sans-900 text-center mb-5">RECENT BLOG</h1>
+          <SlideFadeIn>
+            <h1 className="nunito-sans-900 text-center mb-5">RECENT BLOG</h1>
+          </SlideFadeIn>
           <MyBlogs blogData={blogImages} />
         </div>
       </div>

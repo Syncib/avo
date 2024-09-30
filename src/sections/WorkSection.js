@@ -10,6 +10,7 @@ import work4 from "../assets/images/work-4.webp";
 import work5 from "../assets/images/work-5.webp";
 import work6 from "../assets/images/work-6.webp";
 import WorkTemplate from "../components/WorkTemplate";
+import SlideFadeIn from "../components/SlideFadeIn";
 const personData = [
   { profile: person1, banner: work1 },
   { profile: person2, banner: work2 },
@@ -22,7 +23,9 @@ const WorkSection = () => {
   return (
     <>
       <div class="container">
-        <h1 className="nunito-sans-900 text-center mb-5">OUR WORKS</h1>
+        <SlideFadeIn>
+          <h1 className="nunito-sans-900 text-center mb-5">OUR WORKS</h1>
+        </SlideFadeIn>
         <div className="d-flex flex-column">
           {personData.map((person, index) =>
             index % 2 === 0 ? (

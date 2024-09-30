@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./ClientReview.css";
+import SlideFadeIn from "../components/SlideFadeIn";
 const settings = {
   dots: true,
   infinite: true,
@@ -32,7 +33,9 @@ const ClientReview = () => {
       </h1>
       <Slider {...settings}>
         {ourClients.map((client, index) => (
-          <Quote key={index} data={client} />
+          <SlideFadeIn>
+            <Quote key={index} data={client} />
+          </SlideFadeIn>
         ))}
       </Slider>
     </div>

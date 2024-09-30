@@ -16,6 +16,7 @@ import team8 from "../../assets/images/team-8.jpg.webp";
 import "./About.css";
 import ClientReview from "../../sections/ClientReview";
 import Footer from "../../components/Footer";
+import SlideFadeIn from "../../components/SlideFadeIn";
 
 const About = () => {
   const team = [
@@ -54,11 +55,15 @@ const About = () => {
       </div>
       <div className="expert-team">
         <div class="container">
-          <h1 className="nunito-sans-900 text-center mb-5">EXPERT TEAM</h1>
+          <SlideFadeIn>
+            <h1 className="nunito-sans-900 text-center mb-5">EXPERT TEAM</h1>
+          </SlideFadeIn>
           <div className="row">
             {team.map((member, index) => (
               <div key={index} className="col-lg-3 team-member">
-                 <TeamCard teaminfo={member} />
+                 <SlideFadeIn>
+                   <TeamCard teaminfo={member} />
+                 </SlideFadeIn>
               </div>
             ))}
           </div>

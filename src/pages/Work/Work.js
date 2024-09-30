@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Footer from "../../components/Footer";
 import WorkSection from "../../sections/WorkSection";
+import SlideFadeIn from "../../components/SlideFadeIn";
 const Work = () => {
   return (
     <div className="overflow-hidden">
@@ -17,7 +18,9 @@ const Work = () => {
             <Link to={"/work"}>WORK</Link>
             <FaChevronRight color="red" />
           </div>
-          <h1 className="white wrk-herohead">WORK</h1>
+          <SlideFadeIn>
+            <h1 className="white wrk-herohead">WORK</h1>
+          </SlideFadeIn>
         </div>
       </div>
       <div className="d-flex">
