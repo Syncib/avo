@@ -10,10 +10,17 @@ import work4 from "../assets/images/work-4.webp";
 import work5 from "../assets/images/work-5.webp";
 import work6 from "../assets/images/work-6.webp";
 import WorkTemplate from "../components/WorkTemplate";
-const personData = [{profile:person1,banner:work1},{profile:person2,banner:work2},{profile:person3,banner:work3},{profile:person2,banner:work4},{profile:person2,banner:work5},{profile:person2,banner:work6},];
+const personData = [
+  { profile: person1, banner: work1 },
+  { profile: person2, banner: work2 },
+  { profile: person3, banner: work3 },
+  { profile: person2, banner: work4 },
+  { profile: person2, banner: work5 },
+  { profile: person2, banner: work6 },
+];
 const WorkSection = () => {
   return (
-    <div className="work-section">
+    <>
       <div class="container">
         <h1 className="nunito-sans-900 text-center mb-5">OUR WORKS</h1>
         <div className="d-flex flex-column">
@@ -26,7 +33,7 @@ const WorkSection = () => {
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

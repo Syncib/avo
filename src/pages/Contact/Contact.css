@@ -1,0 +1,55 @@
+.contact-page {
+  background-image: url("../../assets/images/bg_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 60vh;
+}
+
+.contact-sec {
+  top: 70%;
+}
+
+.contact-sec a {
+  text-decoration: none;
+  color: rgb(160, 160, 180);
+}
+
+.contact-herohead {
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact-section {
+  background-color: white;
+  padding: 10rem 0;
+}
+
+.contact-form{
+    background-color: #f3f3f3;
+    padding: 8%;
+}
+
+.form-control{
+    padding: 12px;
+}
+
+.conico-bg{
+    width: 3rem;
+    height: 3rem;
+    padding-top: 0.6rem;
+}
+
+.conti p{
+    margin: 0;
+}
+
+.contact-head{
+    color: #d1002c;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

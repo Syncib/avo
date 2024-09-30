@@ -1,0 +1,38 @@
+.about-page{
+    background-image: url("../../assets//images/bg_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+.ab-sec{
+    top:70%
+}
+
+.ab-sec a{
+text-decoration: none;
+color: rgb(160, 160, 180);
+}
+
+.ab-herohead{
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.expert-team{
+    background-color: rgb(243, 243, 243);
+    padding: 10rem 0;
+}
+
+.icons{
+   opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.team-member:hover .icons{
+   opacity: 1;
+   transition: opacity 0.2s ease-in;
+}

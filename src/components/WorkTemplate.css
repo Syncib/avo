@@ -19,7 +19,13 @@
 .work-template{
     margin-bottom: -3%;
 }
-
+.portfolio{
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #000000;
+    font-weight: 700;
+}
 @media (max-width: 992px) {
 
     .work-template{

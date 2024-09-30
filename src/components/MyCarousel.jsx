@@ -4,6 +4,7 @@ import slider2 from "../assets/images/bg_2.jpg";
 import { FaPlay } from "react-icons/fa";
 import "./MyCarousel.css"; // Custom CSS
 import { useSpring,animated } from "react-spring";
+import SlideFadeIn from "./SlideFadeIn";
 const images = [slider1, slider2];
 const Number = ({n})=>{
   const {number} = useSpring({
@@ -59,7 +60,7 @@ const MyCarousel = () => {
         prevIndex < extendedImages.length - 1 ? prevIndex + 1 : 1
       );
       setIsTransitioning(true);
-    }, 1000000); // Change slide every 5 seconds
+    }, 5000); // Change slide every 5 seconds
   };
 
   const stopAutoScroll = () => {
@@ -164,24 +165,28 @@ const MyCarousel = () => {
             <div className="container position-relative slide-text">
               <div className="row">
                 <div className="col-12 col-lg-6 order-2 order-lg-1">
-                  <h1 className="white nunito-sans-900 slide-text-heading">
-                    We Create Modern & Minimal Website
-                  </h1>
-                  <p className="nunito-sans-regular slide-text-para">
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia.
-                  </p>
-                  <button className="btn btn-danger slide-text-btn p-3">
-                    Start Project
-                  </button>
+                  <SlideFadeIn>
+                    <h1 className="white nunito-sans-900 slide-text-heading">
+                      We Create Modern & Minimal Website
+                    </h1>
+                    <p className="nunito-sans-regular slide-text-para">
+                      A small river named Duden flows by their place and supplies
+                      it with the necessary regelialia.
+                    </p>
+                    <button className="btn btn-danger slide-text-btn p-3">
+                      Start Project
+                    </button>
+                  </SlideFadeIn>
                 </div>
                 <div className="col-12 col-lg-6 order-1 order-lg-2">
-                  <h1 className="white nunito-sans-900 slide-text-heading border-danger px-3 text-lg-end custom-border">
-                    <Number n={400}/>
-                  </h1>
-                  <p className="nunito-sans-regular slide-text-para text-lg-end">
-                    More than a hundred successful projects
-                  </p>
+                  <SlideFadeIn>
+                    <h1 className="white nunito-sans-900 slide-text-heading border-danger px-3 text-lg-end custom-border">
+                      <Number n={400}/>
+                    </h1>
+                    <p className="nunito-sans-regular slide-text-para text-lg-end">
+                      More than a hundred successful projects
+                    </p>
+                  </SlideFadeIn>
                 </div>
               </div>
             </div>

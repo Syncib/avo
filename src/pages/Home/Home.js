@@ -4,13 +4,19 @@ import MyCarousel from "../../components/MyCarousel";
 import WorkSection from "../../sections/WorkSection";
 import AboutSection from "../../sections/AboutSection";
 import ClientReview from "../../sections/ClientReview";
-import "./Home.css";
 import MyBlogs from "../../components/MyBlogs";
 import Footer from "../../components/Footer";
+import EstimatedPort from "../../components/EstimatedPort";
+import image1 from "../../assets/images/image_1.webp";
+import image2 from "../../assets/images/image_2.webp";
+import image3 from "../../assets/images/image_3.webp";
+import image4 from "../../assets/images/image_4.webp";
+import "./Home.css";
 
 const Home = () => {
+  const blogImages = [image1, image2, image3, image4];
   return (
-    <div className="home-div">
+    <div className="overflow-hidden">
       <div className="position-relative hero-section">
         <Navbar />
         <MyCarousel />
@@ -24,27 +30,15 @@ const Home = () => {
         <div className="about-design1"></div>
         <div className="about-design2"></div>
       </div>
-      <WorkSection />
+      <div className="work-section">
+        <WorkSection />
+      </div>
       <div className="d-flex">
         <div className="design1"></div>
         <div className="design2"></div>
       </div>
       <ClientReview />
-      <div className="get-estimate container">
-        <div className="estimated-div">
-          <h2 className="red about-para">Get Started</h2>
-          <h1 className="estimate-heading white">
-            Fill in the brief and get the project estimate
-          </h1>
-          <p className="about-para">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts.
-          </p>
-          <button className="btn btn-danger slide-text-btn px-3">
-            Get started
-          </button>
-        </div>
-      </div>
+      <EstimatedPort />
       <div className="d-flex">
         <div className="about-design1"></div>
         <div className="about-design2"></div>
@@ -52,17 +46,16 @@ const Home = () => {
       <div className="blog-section">
         <div className="container">
           <h1 className="nunito-sans-900 text-center mb-5">RECENT BLOG</h1>
-          <MyBlogs />
+          <MyBlogs blogData={blogImages} />
         </div>
       </div>
       <div className="footer-section bg-black">
-      <div className="d-flex">
-        <div className="design1" style={{ backgroundColor: "black" }}></div>
-        <div className="design2" style={{ backgroundColor: "black" }}></div>
+        <div className="d-flex">
+          <div className="design1" style={{ backgroundColor: "black" }}></div>
+          <div className="design2" style={{ backgroundColor: "black" }}></div>
+        </div>
+        <Footer />
       </div>
-      <Footer/>
-      </div>
-   
     </div>
   );
 };

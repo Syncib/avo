@@ -1,0 +1,29 @@
+.work-page{
+    background-image: url("../../assets/images/bg_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+.wrk-sec{
+    top:70%
+}
+
+.wrk-sec a{
+text-decoration: none;
+color: rgb(160, 160, 180);
+}
+
+.wrk-herohead{
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.workpage-section{
+    background-color: white;
+    padding: 10rem 0;
+  }
+

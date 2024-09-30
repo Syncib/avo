@@ -1,16 +1,12 @@
 import React from "react";
 import { FaComment } from "react-icons/fa";
-import image1 from "../assets/images/image_1.webp";
-import image2 from "../assets/images/image_2.webp";
-import image3 from "../assets/images/image_3.webp";
-import image4 from "../assets/images/image_4.webp";
 import "./MyBlogs.css";
-const MyBlogs = () => {
-  const blogImages = [image1, image2, image3, image4];
+const MyBlogs = ({blogData}) => {
+ 
   return (
-    <div className="row justify-content-center gap-4">
-      {blogImages.map(image=>(
-        <div className="col-12 col-lg-2">
+    <div className="row justify-content-center">
+      {blogData.map(image=>(
+        <div className="col-12 col-lg-3">
         <p className="blog-entry">Amplify your blockchain team</p>
         <div className="blog-image" style={{ backgroundImage: `url(${image})` }}></div>
         <p className="d-inline-flex align-items-center gap-2 blog-entry-meta">

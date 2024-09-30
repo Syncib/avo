@@ -1,0 +1,29 @@
+.get-estimate{
+    background-image: url("../assets/images/bg_1.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 2rem;
+    margin-bottom: 10rem;
+    width: 50%;
+   }
+   .estimate-heading {
+     font-size: 30px;
+   }
+   .estimated-div{
+     width: 45%;
+   
+   }
+   .blog-section{
+    background-color: rgb(243, 243, 243);
+    padding: 10rem 0;
+  }
+   
+   @media (max-width:992px ) {
+     .estimated-div{
+       width: unset;
+     }
+     .get-estimate{
+      width: 80%;
+     }
+   }
+  
