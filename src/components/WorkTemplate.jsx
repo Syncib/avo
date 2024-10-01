@@ -1,4 +1,3 @@
-import work1 from "../assets/images/work-1.webp";
 import SlideFadeIn from "./SlideFadeIn";
 import "./WorkTemplate.css";
 const WorkTemplate = ({ reverse, data }) => {
